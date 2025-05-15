@@ -1,0 +1,27 @@
+---
+# 项目：My React App
+# 框架与库：React, React Router v6, Zustand, Axios
+# 代码风格：遵循 Airbnb JS/React 风格，使用 2 空格缩进
+alwaysApply: true
+---
+
+# 项目背景
+- 本仓库是一个基于 Vite + React + JSX 的前端脚手架模板
+- 状态管理使用 [Zustand](https://github.com/pmndrs/zustand) 并开启持久化
+- HTTP 请求封装在 `src/utils/https.js`，请勿直接从 `axios` 导入
+
+# 代码约定
+- 组件文件命名使用 PascalCase,`.jsx` 或 `.tsx` 后缀
+- 函数组件统一使用 arrow function 语法
+- 路由配置集中在 `src/router/routes.jsx`，“前置守卫”逻辑请放在 `RouteGuard` 组件内
+- 全局样式变量、主题色集中在 `src/assets/styles/variables.css`
+- 图片资源统一放在 `src/assets/images` 目录下,使用图片调用useImage里的getImage方法
+
+# 常用片段
+- **创建新页面**：在 `src/pages` 下新建 `Xxx.jsx`：
+  ```jsx
+  import React from 'react';
+
+  export default function Xxx() {
+    return <div className="xxx">Hello Xxx</div>;
+  }
