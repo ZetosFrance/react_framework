@@ -1,5 +1,3 @@
-// useImage.ts
-// useImage.ts
 import { useMemo } from 'react';
 
 export default function useImage(path, fileName = '') {

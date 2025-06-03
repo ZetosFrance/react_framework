@@ -15,7 +15,7 @@ export default function RouteGuard({ children }) {
     //   navigate("/login", { replace: true })
     // }
     console.log(token);
-  }, [location.pathname, navigate]);
+  }, [location.pathname, token, navigate]);
 
   return children;
 }

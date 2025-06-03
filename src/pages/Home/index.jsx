@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <div>
       <SvgIcon name="react" />
+      <SvgIcon name="react" path="home" />
       <SvgIcon name="vite" />
       <img src={image} alt="" />
       <img src={image2} alt="" />

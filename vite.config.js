@@ -19,10 +19,10 @@ export default () => {
       }),
       eslintPlugin(),
       createSvgIconsPlugin({
-        iconDirs: [path.resolve(__dirname, 'src/assets/svg')], // 指定SVG目录[1,5](@ref)
-        symbolId: 'icon-[name]', // 文件名即symbolId（如home.svg对应#icon-home）[5,9](@ref)
-        inject: 'body-last', // SVG雪碧图插入位置
-        customDomId: '__svg_icons', // DOM容器ID
+        iconDirs: [path.resolve(__dirname, 'src/assets/svg')],
+        symbolId: 'icon-[dir]-[name]',
+        inject: 'body-last',
+        customDomId: '__svg_icons',
       }),
       tailwindcss(),
     ],
