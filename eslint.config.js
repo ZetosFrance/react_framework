@@ -19,6 +19,11 @@ export default [
       react: reactPlugin,
       'react-hooks': hooksPlugin,
     },
+    settings: {
+      react: {
+        version: 'detect', // 自动检测 React 版本
+      },
+    },
     rules: {
       ...reactPlugin.configs.recommended.rules,
       ...hooksPlugin.configs.recommended.rules,
@@ -28,7 +33,9 @@ export default [
       'no-unused-vars': 'warn',
       'prettier/prettier': 'warn',
     },
+  },
+  {
     ignores: ['node_modules', 'dist', 'build', 'public', 'src/assets'],
   },
-  prettierPlugin, // 必须放在最后，覆盖冲突规则[6,8](@ref)
+  prettierPlugin,
 ];
