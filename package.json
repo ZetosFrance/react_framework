@@ -7,7 +7,8 @@
     "dev": "vite --mode dev --open",
     "build": "vite build --mode prod",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@ant-design/icons": "~5.6.1",
